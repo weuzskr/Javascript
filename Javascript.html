@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple JavaScript</title>
+</head>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+
+    p {
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        background-color: #fff;
+        margin-bottom: 5px;
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+    h2 {
+        color: #3498db;
+        text-align: center;
+    }
+
+    h4 {
+        color: #27ae60;
+    }
+
+    h5 {
+        color: red;
+    }
+</style>
+<body>
+
+    <h1>Variables JavaScript</h1>
+
+    <script>
+        function determinerStatut(age) {
+    if (age >= 18) {
+        return "La personne est majeure.";
+    } else {
+        return "La personne est mineure.";
+    }
+}
+
+// Exemple d'utilisation de la fonction
+let resultatStatut = determinerStatut(20); console.log(resultatStatut);
+document.write("Resultat de l'age "  );
+document.write('<h4>' +  resultatStatut + '</h4>');
+
+console.log("Affichage des nombres de 1 à 10 :");
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+let somme = 0;
+let j = 1;
+
+while (j <= 10) {
+    somme += j;
+    j++;
+}
+
+console.log("La somme des entiers de 1 à 10 est :", somme);
+document.write('Voici la somme des entiers' );
+document.write('<h2>' + somme + '</h2>' );
+
+function verifierParite(nombre) {
+    if (nombre % 2 === 0) {
+        return "Le nombre est pair.";
+    } else {
+        return "Le nombre est impair.";
+    }
+}
+
+// Exemple d'utilisation de la fonction
+let resultatParite = verifierParite(7);
+console.log(resultatParite);
+
+document.write("Verification parité");
+document.write("<h5 style'color: red;'>" + resultatParite + "</h5>")
+    </script>
+
+    <h1 style="text-align: center;">Manipulation de Tableau en JavaScript</h1>
+
+    <script>
+        // 1. Créez un tableau appelé fruits contenant quelques noms de fruits.
+        let fruits = ['Pomme', 'Banane', 'Orange', 'Fraise'];
+        document.write('<p>Fruits avant les modifications :</p>');
+        document.write('<ul>');
+        for (let i = 0; i < fruits.length; i++) {
+            document.write('<li>' + fruits[i] + '</li>');
+        }
+        document.write('</ul>');
+
+        // 2. Ajoutez un nouveau fruit à la fin du tableau en utilisant la méthode push().
+        fruits.push('Ananas');
+        document.write('<p>Fruits après Ajout :</p>');
+        document.write('<ul>');
+        for (let i = 0; i < fruits.length; i++) {
+            document.write('<li>' + fruits[i] + '</li>');
+        }
+        document.write('</ul>');
+
+        // 3. Supprimez un élément du tableau en utilisant la méthode splice().
+        // Supprimons le deuxième élément (indice 1).
+        fruits.splice(1, 1);
+
+        // 4. Utilisez une boucle for pour parcourir le tableau et afficher chaque fruit.
+        for (let i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+
+        // afficher les fruits dans la page HTML.
+        document.write('<p>Fruits après les modifications :</p>');
+        document.write('<ul>');
+        for (let i = 0; i < fruits.length; i++) {
+            document.write('<li>' + fruits[i] + '</li>');
+        }
+        document.write('</ul>');
+    </script>
+</body>
+<script>
+    // Votre code JavaScript
+    let nombreEntier = 42;          // Un nombre entier
+    let nombreDecimal = 3.14;       // Un nombre décimal
+    let nombreNegatif = -7;  
+    let qlq=100;       // Un nombre négatif
+
+    // Vous pouvez également afficher les valeurs dans la console du navigateur
+    console.log(nombreEntier, nombreDecimal, nombreNegatif);
+    // Comparaison et affichage du plus grand
+    let plusGrand = nombreEntier;
+
+        if (nombreDecimal > plusGrand) 
+        {
+            plusGrand = nombreDecimal;
+        }
+
+        if (nombreNegatif > plusGrand) 
+        {
+            plusGrand = nombreNegatif;
+        }
+        if (qlq> plusGrand)
+        {
+            plusGrand=qlq;
+        }
+        // Affichage du résultat dans la console
+        console.log("Le plus grand nombre est :", plusGrand);
+
+// Affichage du résultat dans la page HTML
+document.write("<p>Le plus grand nombre est : " + plusGrand + "</p>");
+</script>
+<script>
+    let chaineSimple = 'Bonjour';          // Une chaîne de caractères avec des apostrophes simples
+    let chaineDouble = "Hello, World!";    // Une chaîne de caractères avec des guillemets doubles
+    let chaineMultiligne = `Ceci est
+    une chaîne
+    multiligne`;                          // Une chaîne de caractères multiligne avec des backticks
+
+    console.log(chaineSimple);
+    document.write('<p>' + chaineSimple + '</p>');
+</script>
+<script>
+let estVrai = true;    // Booléen vrai
+let estFaux = false;   // Booléen faux
+
+</script>
+</html>
