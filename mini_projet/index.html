@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Gestion de Projet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestion de Projet</h1>
+    </header>
+
+    <main>
+
+        <section id="project-section">
+            <h2>Gestion de Projet</h2>
+            <div id="project-form">
+                <!-- Formulaire pour ajouter de nouveaux projets -->
+            
+                <label for="projectName">
+                    <i class="fas fa-file-alt"></i> Nom du Projet:
+                </label>
+                <input type="text" id="projectName" required>
+            
+                <label for="startDate">
+                    <i class="far fa-calendar-alt"></i> Date de Début:
+                </label>
+                <input type="date" id="startDate" required>
+            
+                <label for="endDate">
+                    <i class="far fa-calendar-alt"></i> Date de Fin Prévue:
+                </label>
+                <input type="date" id="endDate" required>
+            
+                <button onclick="addProject()">
+                    <i class="fas fa-plus-circle"></i> Ajouter Projet
+                </button>
+            </div>
+            
+
+            <table id="project-table">
+                <!-- Tableau pour afficher la liste des projets -->
+                <thead>
+                    <tr>
+                        <th><i class="fas fa-file-alt"></i> Nom du Projet</th>
+                        <th><i class="fas fa-calendar-alt"></i> Date de Début</th>
+                        <th><i class="fas fa-calendar-times"></i> Date de Fin Prévue</th>
+                        <th><i class="fas fa-cogs"></i> Action</th>
+                    </tr>
+                </thead>
+                
+                <tbody id="project-list">
+                    <!-- La liste des projets sera ajoutée ici dynamiquement -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="bom-section">
+            <h2>Optimisation du BOM</h2>
+            <!-- Ajoutez du contenu relatif à l'optimisation du BOM ici -->
+            <div id="performance-results">
+                <!-- Affichage des résultats de performance -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Gestion de Projet & Ousmane SANKHARE. Tous droits réservés.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

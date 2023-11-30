@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+/* Réinitialisation des marges et des paddings pour assurer une apparence uniforme */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de l'en-tête */
+header {
+    background-color: #3498db; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    text-align: center; /* Centrer le texte */
+    padding: 20px; /* Espacement intérieur */
+    border-bottom: 2px solid #2980b9; /* Bordure en bas */
+}
+
+/* Style du titre h1 */
+h1 {
+    font-family: 'Arial', sans-serif; /* Police de caractères */
+    font-size: 2em; /* Taille de la police */
+    margin-bottom: 10px; /* Marge en bas */
+}
+
+/* Ajouter un effet de survol sur l'en-tête */
+header:hover {
+    background-color: #2980b9; /* Changement de couleur de fond au survol */
+}
+
+
+
+
+main {
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+#project-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#project-form label,
+#project-form input {
+    display: block;
+    margin-bottom: 15px;
+}
+
+#project-form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#project-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#project-form button:hover {
+    background-color: #0056b3;
+}

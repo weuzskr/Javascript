@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice JavaScript</title>
+</head>
+<style>
+    /* Style par défaut */
+    #elementToChangeColor {
+        width: 200px;
+        height: 100px;
+        background-color: #e33939;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        line-height: 100px;
+        cursor: pointer;
+    }
+
+    
+        #animatedButton {
+            width: 100px;
+            height: 50px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: all 0.5s ease; /* Animation de transition */
+        }
+</style>
+<body>
+
+    <button id="animatedButton" onclick="animateButton()">Cliquez-moi</button>
+
+    <script>
+        function animateButton() {
+            var button = document.getElementById("animatedButton");
+
+            // Modification des propriétés CSS pour créer une animation
+            button.style.backgroundColor = "#e74c3c"; // Changement de couleur
+            button.style.transform = "translateX(100px)"; // Translation vers la droite
+
+            // Réinitialisation des propriétés après un délai pour revenir à l'état initial
+            setTimeout(function() {
+                button.style.backgroundColor = "#3498db";
+                button.style.transform = "translateX(0)";
+            }, 1000); // Délai en millisecondes
+        }
+    </script>
+
+
+    <div id="elementToModify">Cliquez sur le bouton pour effectuer des modifications.</div>
+    <button id="myButton">Cliquez-moi</button>
+
+    <script>
+        // Fonction pour sélectionner un élément par son ID et modifier son contenu
+        function modifyElementContent() {
+            var elementToModify = document.getElementById('elementToModify');
+            if (elementToModify) {
+                elementToModify.textContent = "Le contenu a été modifié!";
+            }
+        }
+
+        // Fonction pour ajouter un nouvel élément à un élément existant
+        function addNewElement() {
+            var parentElement = document.getElementById('elementToModify');
+            if (parentElement) {
+                var newElement = document.createElement('p');
+                newElement.textContent = "Nouvel élément ajouté!";
+                parentElement.appendChild(newElement);
+            }
+        }
+
+        // Fonction pour afficher un message dans la console lorsqu'un bouton est cliqué
+        function handleClickEvent() {
+            console.log("Le bouton a été cliqué! Bienvenue Ousmane SANKHARE");
+        }
+
+        // Utilisation de addEventListener pour attacher un gestionnaire d'événements au bouton
+        var myButton = document.getElementById('myButton');
+        if (myButton) {
+            myButton.addEventListener('click', handleClickEvent);
+        }
+    </script>
+
+<script>
+    // Fonction pour afficher la largeur et la hauteur de la fenêtre du navigateur
+    function afficherDimensionsFenetre() {
+        var largeur = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var hauteur = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+        alert("Largeur de la fenêtre : " + largeur + " pixels\nHauteur de la fenêtre : " + hauteur + " pixels");
+    }
+
+    // Fonction pour rediriger l'utilisateur vers une nouvelle page
+    function redirigerVersNouvellePage() {
+        // Remplacez "nouvelle_page.html" par l'URL de la nouvelle page
+        window.location.href = "objets.html";
+    }
+</script>
+
+<h2>Exercice JavaScript Redirection</h2>
+
+<!-- Bouton pour afficher les dimensions de la fenêtre -->
+<button onclick="afficherDimensionsFenetre()">Afficher Dimensions de la Fenêtre</button>
+
+<!-- Bouton pour rediriger vers une nouvelle page -->
+<button onclick="redirigerVersNouvellePage()">Rediriger vers une Nouvelle Page</button>
+
+
+
+<form style="text-align: center;" id="myForm" onsubmit="showAlert()">
+    <label for="inputText">Entrez du texte :</label>
+    <input type="text" id="inputText" name="inputText" required>
+    <br>
+    <input type="submit" value="Soumettre">
+</form>
+
+<script>
+    function showAlert() {
+        alert("Formulaire soumis avec succès!");
+        // Vous pouvez ajouter ici d'autres actions à effectuer lors de la soumission
+    }
+</script>
+
+
+<div id="elementToChangeColor" onmouseenter="changeColor(true)" onmouseleave="changeColor(false)">
+    Survolez-moi!
+</div>
+
+<script>
+    function changeColor(isMouseOver) {
+        var element = document.getElementById("elementToChangeColor");
+
+        if (isMouseOver) {
+            element.style.backgroundColor = "#a0a0a0";
+        } else {
+            element.style.backgroundColor = "#e0e0e0";
+        }
+    }
+</script>
+
+
+</body>
+</html>

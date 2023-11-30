@@ -1,66 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salutations</title>
-</head>
-<style>
-    body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-    }
 
-    h1, h2, h3, h5 {
-        color: #333;
-        text-align: center;
-    }
-
-    h1 {
-        margin-top: 30px;
-        color: #006666;
-    }
-
-    h2 {
-        margin-top: 20px;
-        color: #009999;
-    }
-
-    h3 {
-        margin-top: 20px;
-        color: #006600;
-        border: 2px dotted green;
-        padding: 10px;
-        text-align: center;
-    }
-
-    h5 {
-        margin: 0;
-    }
-
-    p {
-        margin: 10px 0;
-        color: #555;
-        text-align: center;
-    }
-
-    #resultatPorteeVariables {
-        font-weight: bold;
-        color: #990000;
-    }
-
-    #resultatNombreAleatoire, #resultatPlusGrandElement {
-        font-weight: bold;
-        color: #cc3300;
-    }
-</style>
-<body>
-
-    <h1>Exemple de Salutations en JavaScript</h1>
-
-    <script>
         // Définition de la fonction greet
         function greet(name) {
             console.log("Bonjour, " + name + " !");
@@ -104,12 +42,6 @@ document.write('<h5>Résultats des calculs :</h5>');
         document.write('<p>' + calculate(7, 0, '/') + '</p>');  // Tentative de division par zéro : "Division par zéro impossible"
         document.write('<p>' + calculate(5, 3, '%') + '</p>');  // Opérateur non reconnu : "Opérateur non reconnu"
 
-</script>
-
-<h1 style="text-align: center; color: aquamarine;">Calcul de l'aire d'un rectangle</h1>
-
-
-<script>
 
      
 
@@ -135,11 +67,8 @@ console.log("Aire du rectangle 3 :", aireRectangle3);
         document.write('<p>Aire du rectangle 2 : ' + aireRectangle2 + '</p>');
         document.write('<p>Aire du rectangle 3 : ' + aireRectangle3 + '</p>');
     
-</script>
 
-<h3 style="text-align: center; border: 2px dotted green;"> Teste des fonctions outer et inner</h3>
 
-<script>
     function outer() {
     console.log("Fonction outer De Harris SEFEROVIC");
     document.write("Fonction outer De Harris SEFEROVIC </br> </br> </br>");
@@ -156,19 +85,8 @@ console.log("Aire du rectangle 3 :", aireRectangle3);
 // Appel de la fonction principale outer
 outer();
 
-</script>
-<h1>Expérimentation avec JavaScript</h1>
 
-    <h2>Résultats de la portée des variables :</h2>
-    <p id="resultatPorteeVariables" style="text-align: center;"></p>
 
-    <h2>Nombre aléatoire entre 1 et 100 :</h2>
-    <p id="resultatNombreAleatoire"></p>
-
-    <h2>Le plus grand élément du tableau :</h2>
-    <p id="resultatPlusGrandElement"></p>
-
-    <script>
        
         function exemplePorteeVariables() {
             let variableLocale = "Je suis locale à la fonction.";
@@ -206,8 +124,4 @@ outer();
         let tableauExemple = [45, 78, 23, 56, 89, 12];
         let resultatPlusGrand = trouverPlusGrandElement(tableauExemple);
         document.getElementById("resultatPlusGrandElement").innerHTML = "Le plus grand élément du tableau est : " + resultatPlusGrand;
-    </script>
-
-
-</body>
-</html>
+   
